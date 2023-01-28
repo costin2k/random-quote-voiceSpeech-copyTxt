@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #7be495, #329d9c);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #cff4d2;
+    min-height: 50%;
+    min-width: 40%;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 2px rgb(0, 0, 0);
+    padding: 30px 10px 25px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 3rem 0;
+
+}
+
+.quote-area i {
+    font-size: 1rem;
+}
+
+.quote-area i:nth-child(1) {
+    margin: 3px 10px 0 0;
+}
+
+.quote-area i:nth-child(3) {
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote-area {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    word-break: break-all;
+}
+
+.author {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.author span:nth-child(1) {
+    position: absolute;
+    margin: -9px 5px 0 -1.5rem;
+    font-family: monospace;
+
+}
+
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(148, 148, 148);
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.features ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.features ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #329d9c;
+    border-radius: 50%;
+    color: #329d9c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+    color: #fff;
+    background-color: #329d9c;
+}
+
+.features button {
+    border: none;
+    outline: none;
+    background-color: #329d9c;
+    color: #fff;
+    cursor: pointer;
+    padding: .9rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
